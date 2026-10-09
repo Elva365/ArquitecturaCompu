@@ -28,7 +28,7 @@ VLFLAGS := --binary --timing -sv --trace-fst \
 # alu8/ es Verilog puro (sin SystemVerilog), por eso no lleva -sv: asi
 # el flujo de compilacion valida lo mismo que exige Silicluster v3.
 ALU8_VLFLAGS := --binary --timing --trace-fst \
-           -Wno-IEEEMAYDEPRECATE -Wno-TIMESCALEMOD -Wno-WIDTHTRUNC -Wno-WIDTHEXPAND \
+           -Wno-TIMESCALEMOD -Wno-WIDTHTRUNC -Wno-WIDTHEXPAND \
            -Wno-CASEINCOMPLETE -Wno-LATCH -Wno-UNOPTFLAT \
            -CFLAGS "-I$(LZ4_PREFIX)/include" -LDFLAGS "-L$(LZ4_PREFIX)/lib -llz4"
 
